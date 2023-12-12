@@ -4,6 +4,7 @@ import { Controller } from 'react-hook-form'
 
 import { TextField, TextArea, Button } from '@radix-ui/themes'
 import SimpleMde from 'react-simplemde-editor'
+import 'easymde/dist/easymde.min.css';
 
 const IssueForm = () => {
 	return (
@@ -12,7 +13,7 @@ const IssueForm = () => {
 				<TextField.Root>
 					<TextField.Input placeholder='Title' />
 				</TextField.Root>
-				<TextArea placeholder='Description' />
+				<SimpleMde placeholder='Description' />
 				<Button>
 					Submit New Issue
 				</Button>
