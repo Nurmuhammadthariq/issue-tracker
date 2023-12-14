@@ -10,11 +10,10 @@ import { Container, Box, DropdownMenu, Flex, Text } from '@radix-ui/themes'
 
 const Navbar = () => {
 	const currentPath = usePathname()
-	console.log(currentPath)
 
 	const links = [
 		{ label: 'Dashboard', href: '/' },
-		{ label: 'Issues', href: '/issues' }
+		{ label: 'Issues', href: '/issues/list' }
 	]
 
 	return (
